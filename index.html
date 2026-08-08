@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="data:;" />
+		<link rel="stylesheet" href="w3.css" />
+		<title>ESP32 WebServer</title>
+
+		<style>
+			.nav_bar {
+				background-color: rgb(124, 77, 255);
+				color: white;
+			}
+			.canvas_widget {
+				background-color: rgb(66, 66, 66);
+			}
+		</style>
+	</head>
+
+	<body class="">
+		<!-- nav bar  -->
+		<nav class="w3-bar w3-xlarge w3-margin-bottom nav_bar">
+			<a href="/" class="w3-bar-item w3-button w3-hover-grey w3-mobile">Capteurs</a>
+			<a href=" /action" class="w3-bar-item w3-button w3-hover-grey w3-mobile">Réglages</a>
+			<a href="/weather" class="w3-bar-item w3-button w3-hover-grey w3-mobile">Météo</a>
+		</nav>
+
+		<!-- Title -->
+		<div class="w3-container">
+			<h1 class="w3-center">Capteurs Carte ESP32</h1>
+		</div>
+
+		<!-- main content -->
+		<main>
+			<section class="w3-container">
+				<canvas class="canvas_widget" id="canvas_temperature_id" width="400px" height="300px"></canvas>
+			</section>
+		</main>
+		<!-- end main content -->
+
+		<footer class="w3-container">
+			<p>BUT2 SAE ESP32</p>
+		</footer>
+
+		<!---->
+		<script src="ezWidgets.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
