@@ -9,6 +9,7 @@ const gaugeTemperature = new Gauge('canvas_temperature_id', {
 	value: 0,
 	colorNeedle: '#c6d7e7',
 	colorText: '#d3e0ed',
+	backgroundColor:'rgb(51,51,51)',
 	tickInterval: 5,
 	zones: [
 		{ limit: 10, color: '#4d4dc3' },
